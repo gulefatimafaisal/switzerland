@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Lake\ Lucerne\ Beautiful\ View\ in\ Switzerland\ Country\ 4K\ Wallpaper.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;   
+}
+
+/* Responsive Design */
+
+/* For devices with a width up to 768px (phones) */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    ul {
+        float: none;
+        text-align: center;
+    }
+
+    ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .title {
+        top: 40%;
+        text-align: center;
+    }
+
+    .title h1 {
+        font-size: 40px;
+    }
+
+    .button {
+        top: 55%;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For devices with a width between 769px and 1024px (tablets) */
+@media (max-width: 1024px) {
+    header {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .button {
+        top: 60%;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 1025px) {
+    header {
+        background-attachment: fixed;
+    }
+}
